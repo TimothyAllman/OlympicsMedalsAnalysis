@@ -29,3 +29,20 @@ product = None
 
 # %%
 # your code here...
+
+
+# %% [markdown]
+# FAQ 
+
+# %% [markdown]
+# ## FAQ Where did you get your data
+# Luckily for me data was found on kaggle [https://www.kaggle.com/datasets/piterfm/olympic-games-medals-19862018](https://www.kaggle.com/datasets/piterfm/olympic-games-medals-19862018)
+# my thanks to user Petro for making this available, I am sure it was no easy task
+
+# %%
+
+# %%
+
+# %%
+
+# %%
