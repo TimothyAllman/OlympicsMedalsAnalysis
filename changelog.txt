@@ -1,5 +1,16 @@
+0.0.3
+August 15 2024
+- Add task to ingest athelte data
+- Add task to ingest hosts data
+- Add task to ingest medals data
+- Add task to ingest results data
+
+0.0.2
+August 14 2024
+- Add csv medal data to `Data` folder
+
 0.0.1
-June 9 2024
+August 13 2024
 - Add default/results pipeline.yaml
 - Add reorts pipeline.yaml
 - Add placeholder/tamplate tasks.py files
