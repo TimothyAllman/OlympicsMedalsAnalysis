@@ -29,3 +29,64 @@ product = None
 
 # %%
 # your code here...
+
+# %% [markdown]
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# # Folders we will creat and use
+
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %% [markdown]
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# <br>
+# # Paths to source data files
+
+# %%
+ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE = f"{}/olympic_athletes.csv"
+
+# %%
+ABSOLUTE_PATH_TO_HOSTS_CSV_FILE= f"{}/olympic_hosts.csv"
+
+# %%
+ABSOLUTE_PATH_TO_MEDALS_CSV_FILE = f"{}/olympic_medals.csv"
+
+
+# %%
+ABSOLUTE_PATH_TO_RESULTS_CSV_FILE = f"{}/olympic_results.csv"
+
+
+# %%
+
+# %%
