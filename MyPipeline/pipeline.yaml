@@ -3,15 +3,25 @@ meta:
 
 tasks:
   # tasks to get/fetch data from some central source
-  - source: tasks/taskGetData1.py
+  - source: tasks/IngestAthelteDataFromCsvFile.py
     product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskGetData1.ipynb
-        MY_VAR1: products/{{MY_FOLDER}}/sharedVariables/MY_VAR1.pkl
+        nb: products/{{MY_FOLDER}}/notebooks/IngestAthelteDataFromCsvFile.ipynb
+        ATHELETES_DF: products/{{MY_FOLDER}}/sharedVariables/ATHELETES_DF.pkl
 
-  - source: tasks/taskGetData2.py
+  - source: tasks/IngestHostCityDataFromCsvFile.py
     product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskGetData2.ipynb
-        MY_VAR2: products/{{MY_FOLDER}}/sharedVariables/MY_VAR2.pkl
+        nb: products/{{MY_FOLDER}}/notebooks/IngestHostCityDataFromCsvFile.ipynb
+        HOST_CITIES_DF: products/{{MY_FOLDER}}/sharedVariables/HOST_CITIES_DF.pkl
+
+  - source: tasks/IngestResultsDataFromCsvFile.py
+    product:
+        nb: products/{{MY_FOLDER}}/notebooks/IngestResultsDataFromCsvFile.ipynb
+        RESULTS_DF: products/{{MY_FOLDER}}/sharedVariables/RESULTS_DF.pkl
+
+  - source: tasks/IngestMedalsDataFromCsvFile.py
+    product:
+        nb: products/{{MY_FOLDER}}/notebooks/IngestMedalsDataFromCsvFile.ipynb
+        MEDALS_DF: products/{{MY_FOLDER}}/sharedVariables/MEDALS_DF.pkl
 
 
   # tasks to do calcs/transform data 
