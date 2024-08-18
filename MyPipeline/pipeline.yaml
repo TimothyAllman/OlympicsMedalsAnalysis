@@ -24,6 +24,17 @@ tasks:
         MEDALS_DF: products/{{MY_FOLDER}}/sharedVariables/MEDALS_DF.pkl
 
 
+
+
+
+
+
+
+
+
+
+
+
   # tasks to do calcs/transform data 
   - source: tasks/taskDoCalc1.py
     product:
@@ -36,7 +47,21 @@ tasks:
         MY_VAR4: products/{{MY_FOLDER}}/sharedVariables/MY_VAR4.pkl
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   # tasks to generate documentation on every pipeline run 
+  
   # useful for creating how-to's and FAQ pdf's that can used when getting someone familiar with the pipeline
   # especially important when project/pipeline is being handed over from one person to another
   - source: tasks/DocumentationPdfOfFaq.py
