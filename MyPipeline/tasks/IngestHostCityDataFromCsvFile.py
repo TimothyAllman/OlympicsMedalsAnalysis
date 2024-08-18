@@ -39,7 +39,7 @@ import pandas as pd
 
 # %%
 # unpickle stored shared variables
-_ABSOLUTE_PATH_TO_HOSTS_CSV_FILE = pickle.loads(upstream["ConstantsFromFilePaths"]["ABSOLUTE_PATH_TO_HOSTS_CSV_FILE"].read_bytes())
+_ABSOLUTE_PATH_TO_HOSTS_CSV_FILE = pickle.loads(Path(upstream["ConstantsFromFilePaths"]["ABSOLUTE_PATH_TO_HOSTS_CSV_FILE"]).read_bytes())
 
 # %%
 
