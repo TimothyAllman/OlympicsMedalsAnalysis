@@ -2,8 +2,8 @@
 - source: tasks/CommonFunctions.py
   product:
       nb: products/{{MY_FOLDER}}/notebooks/CommonFunctions.ipynb
-      FUNC_1: products/{{MY_FOLDER}}/sharedVariables/FUNC_1.pkl
-      FUNC_2: products/{{MY_FOLDER}}/sharedVariables/FUNC_2.pkl
+      MyCoolFunction: products/{{MY_FOLDER}}/sharedVariables/MyCoolFunction.pkl
+      # FUNC_2: products/{{MY_FOLDER}}/sharedVariables/FUNC_2.pkl
 
 
 
@@ -20,8 +20,8 @@
     ENV_THING_2: "{{ENV_THING_2}}"
   product:
       nb: products/{{MY_FOLDER}}/notebooks/ConstantsFromEnvFileParams.ipynb
-      MY_THING_1: products/{{MY_FOLDER}}/sharedVariables/MY_THING_1.pkl
-      MY_THING_2: products/{{MY_FOLDER}}/sharedVariables/MY_THING_2.pkl
+      # MyCoolFunction: products/{{MY_FOLDER}}/sharedVariables/MyCoolFunction.pkl
+      # MY_THING_2: products/{{MY_FOLDER}}/sharedVariables/MY_THING_2.pkl
 
 
 
@@ -35,11 +35,13 @@
       nb: products/{{MY_FOLDER}}/notebooks/ConstantsFromFilePaths.ipynb
 
       # hardcoded/defined paths for top level folders
-      HARD_CODED_PATH_TO_REPORTS_FOLDER: reports/
+      # HARD_CODED_PATH_TO_REPORTS_FOLDER: reports/
 
       # file paths we "create"  inside the tasks using the above top level folders  and which will be used in other tasks
-      ABSOLUTE_PATH_TO_GRAPH_1_PLOTLY_PNG: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_GRAPH_1_PLOTLY_PNG.pkl
-      ABSOLUTE_PATH_TO_DATA_1_XLSX: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_DATA_1_XLSX.pkl
+      ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE.pkl
+      ABSOLUTE_PATH_TO_HOSTS_CSV_FILE: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_HOSTS_CSV_FILE.pkl
+      ABSOLUTE_PATH_TO_MEDALS_CSV_FILE: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_MEDALS_CSV_FILE.pkl
+      ABSOLUTE_PATH_TO_RESULTS_CSV_FILE: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_RESULTS_CSV_FILE.pkl
 
 
 
@@ -49,5 +51,5 @@
 - source: tasks/Constants.py
   product:
       nb: products/{{MY_FOLDER}}/notebooks/Constants.ipynb
-      CONSTANT_ONE: products/{{MY_FOLDER}}/sharedVariables/CONSTANT_ONE.pkl
-      CONSTANT_TWO: products/{{MY_FOLDER}}/sharedVariables/CONSTANT_TWO.pkl
+      # CONSTANT_ONE: products/{{MY_FOLDER}}/sharedVariables/CONSTANT_ONE.pkl
+      # CONSTANT_TWO: products/{{MY_FOLDER}}/sharedVariables/CONSTANT_TWO.pkl
