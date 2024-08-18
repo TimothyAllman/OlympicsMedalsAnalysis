@@ -46,7 +46,8 @@ import pickle
 # <br>
 # <br>
 # <br>
-# # Folders we will create and use
+# <h1> Folders we will create and use </h1>
+# %%
 ABSOLUTE_PATH_TO_DATA_FOLDER = f"../Data"
 
 # %%
@@ -74,7 +75,7 @@ ABSOLUTE_PATH_TO_DATA_FOLDER = f"../Data"
 # <br>
 # <br>
 # <br>
-# # Paths to source data files
+# <h1> Paths to source data filesn </h1>
 
 # %%
 ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE = f"{ABSOLUTE_PATH_TO_DATA_FOLDER}/olympic_athletes.csv"
