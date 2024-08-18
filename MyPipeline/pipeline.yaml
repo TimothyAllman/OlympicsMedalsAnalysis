@@ -3,9 +3,9 @@ meta:
 
 tasks:
   # tasks to get/fetch data from some central source
-  - source: tasks/IngestAthelteDataFromCsvFile.py
+  - source: tasks/IngestAthleteDataFromCsvFile.py
     product:
-        nb: products/{{MY_FOLDER}}/notebooks/IngestAthelteDataFromCsvFile.ipynb
+        nb: products/{{MY_FOLDER}}/notebooks/IngestAthleteDataFromCsvFile.ipynb
         ATHELETES_DF: products/{{MY_FOLDER}}/sharedVariables/ATHELETES_DF.pkl
 
   - source: tasks/IngestHostCityDataFromCsvFile.py
