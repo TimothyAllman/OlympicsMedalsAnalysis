@@ -29,3 +29,28 @@ product = None
 
 # %%
 # your code here...
+# %%
+# python imports
+from pathlib import Path
+import pickle
+import cloudpickle
+
+# %%
+def MyCoolFunction(x):
+    print(x)
+ 
+# pickle it to use it later
+Path(product["MyCoolFunction"]).parent.mkdir(exist_ok=True,parents=True)
+Path(product["MyCoolFunction"]).write_bytes(cloudpickle.dumps(MyCoolFunction))
+#print output
+MyCoolFunction
+
+# %%
+
+# %%
+
+# %%
+
+# %%
+
+# %%
