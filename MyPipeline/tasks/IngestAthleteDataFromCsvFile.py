@@ -21,7 +21,9 @@
 # %% tags=["parameters"]
 # If this task has dependencies, list them them here
 # (e.g. upstream = ['some_task']), otherwise leave as None.
-upstream = None
+upstream = [
+    "ConstantsFromFilePaths"
+]
 
 # This is a placeholder, leave it as None
 product = None
@@ -29,3 +31,27 @@ product = None
 
 # %%
 # your code here...
+
+# %%
+# python imports
+from pathlib import Path
+import pickle
+import pandas as pd
+
+# %%
+# unpickle stored shared variables
+_ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE = pickle.loads(upstream["ConstantsFromFilePaths"]["ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE"].read_bytes())
+
+# %%
+
+# %%
+ATHELETES_DF = pd.read_csv(_ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE)
+# pickle it to use it later
+Path(product["ATHELETES_DF"]).parent.mkdir(exist_ok=True,parents=True)
+Path(product["ATHELETES_DF"]).write_bytes(pickle.dumps(ATHELETES_DF))
+#print output
+ATHELETES_DF
+
+# %%
+
+# %%
