@@ -29,6 +29,9 @@ product = None
 
 # %%
 # your code here...
+from pathlib import Path
+import pickle
+
 
 # %% [markdown]
 # <br>
@@ -43,8 +46,8 @@ product = None
 # <br>
 # <br>
 # <br>
-# # Folders we will creat and use
-
+# # Folders we will create and use
+ABSOLUTE_PATH_TO_DATA_FOLDER = f"../Data"
 
 # %%
 
@@ -74,18 +77,36 @@ product = None
 # # Paths to source data files
 
 # %%
-ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE = f"{}/olympic_athletes.csv"
+ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE = f"{ABSOLUTE_PATH_TO_DATA_FOLDER}/olympic_athletes.csv"
+# pickle it to use it later
+Path(product["ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE"]).parent.mkdir(exist_ok=True,parents=True)
+Path(product["ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE"]).write_bytes(pickle.dumps(ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE))
+#print output
+ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE
 
 # %%
-ABSOLUTE_PATH_TO_HOSTS_CSV_FILE= f"{}/olympic_hosts.csv"
+ABSOLUTE_PATH_TO_HOSTS_CSV_FILE= f"{ABSOLUTE_PATH_TO_DATA_FOLDER}/olympic_hosts.csv"
+# pickle it to use it later
+Path(product["ABSOLUTE_PATH_TO_HOSTS_CSV_FILE"]).parent.mkdir(exist_ok=True,parents=True)
+Path(product["ABSOLUTE_PATH_TO_HOSTS_CSV_FILE"]).write_bytes(pickle.dumps(ABSOLUTE_PATH_TO_HOSTS_CSV_FILE))
+#print output
+ABSOLUTE_PATH_TO_HOSTS_CSV_FILE
 
 # %%
-ABSOLUTE_PATH_TO_MEDALS_CSV_FILE = f"{}/olympic_medals.csv"
-
+ABSOLUTE_PATH_TO_MEDALS_CSV_FILE = f"{ABSOLUTE_PATH_TO_DATA_FOLDER}/olympic_medals.csv"
+# pickle it to use it later
+Path(product["ABSOLUTE_PATH_TO_MEDALS_CSV_FILE"]).parent.mkdir(exist_ok=True,parents=True)
+Path(product["ABSOLUTE_PATH_TO_MEDALS_CSV_FILE"]).write_bytes(pickle.dumps(ABSOLUTE_PATH_TO_MEDALS_CSV_FILE))
+#print output
+ABSOLUTE_PATH_TO_MEDALS_CSV_FILE
 
 # %%
-ABSOLUTE_PATH_TO_RESULTS_CSV_FILE = f"{}/olympic_results.csv"
-
+ABSOLUTE_PATH_TO_RESULTS_CSV_FILE = f"{ABSOLUTE_PATH_TO_DATA_FOLDER}/olympic_results.csv"
+# pickle it to use it later
+Path(product["ABSOLUTE_PATH_TO_RESULTS_CSV_FILE"]).parent.mkdir(exist_ok=True,parents=True)
+Path(product["ABSOLUTE_PATH_TO_RESULTS_CSV_FILE"]).write_bytes(pickle.dumps(ABSOLUTE_PATH_TO_RESULTS_CSV_FILE))
+#print output
+ABSOLUTE_PATH_TO_RESULTS_CSV_FILE
 
 # %%
 
