@@ -13,15 +13,15 @@ tasks:
         nb: products/{{MY_FOLDER}}/notebooks/IngestHostCityDataFromCsvFile.ipynb
         HOST_CITIES_DF: products/{{MY_FOLDER}}/sharedVariables/HOST_CITIES_DF.pkl
 
-  - source: tasks/IngestResultsDataFromCsvFile.py
-    product:
-        nb: products/{{MY_FOLDER}}/notebooks/IngestResultsDataFromCsvFile.ipynb
-        RESULTS_DF: products/{{MY_FOLDER}}/sharedVariables/RESULTS_DF.pkl
-
   - source: tasks/IngestMedalsDataFromCsvFile.py
     product:
         nb: products/{{MY_FOLDER}}/notebooks/IngestMedalsDataFromCsvFile.ipynb
         MEDALS_DF: products/{{MY_FOLDER}}/sharedVariables/MEDALS_DF.pkl
+
+  - source: tasks/IngestResultsDataFromCsvFile.py
+    product:
+        nb: products/{{MY_FOLDER}}/notebooks/IngestResultsDataFromCsvFile.ipynb
+        RESULTS_DF: products/{{MY_FOLDER}}/sharedVariables/RESULTS_DF.pkl
 
 
 
@@ -36,15 +36,15 @@ tasks:
 
 
   # tasks to do calcs/transform data 
-  - source: tasks/taskDoCalc1.py
-    product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskDoCalc1.ipynb
-        MY_VAR3: products/{{MY_FOLDER}}/sharedVariables/MY_VAR3.pkl
+  # - source: tasks/taskDoCalc1.py
+  #   product:
+  #       nb: products/{{MY_FOLDER}}/notebooks/taskDoCalc1.ipynb
+  #       MY_VAR3: products/{{MY_FOLDER}}/sharedVariables/MY_VAR3.pkl
 
-  - source: tasks/taskDoCalc2.py
-    product:
-        nb: products/{{MY_FOLDER}}/notebooks/taskDoCalc2.ipynb
-        MY_VAR4: products/{{MY_FOLDER}}/sharedVariables/MY_VAR4.pkl
+  # - source: tasks/taskDoCalc2.py
+  #   product:
+  #       nb: products/{{MY_FOLDER}}/notebooks/taskDoCalc2.ipynb
+  #       MY_VAR4: products/{{MY_FOLDER}}/sharedVariables/MY_VAR4.pkl
 
 
 
@@ -61,7 +61,7 @@ tasks:
 
 
   # tasks to generate documentation on every pipeline run 
-  
+
   # useful for creating how-to's and FAQ pdf's that can used when getting someone familiar with the pipeline
   # especially important when project/pipeline is being handed over from one person to another
   - source: tasks/DocumentationPdfOfFaq.py
