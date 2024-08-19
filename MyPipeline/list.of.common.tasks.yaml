@@ -35,7 +35,7 @@
       nb: products/{{MY_FOLDER}}/notebooks/ConstantsFromFilePaths.ipynb
 
       # hardcoded/defined paths for top level folders
-      # HARD_CODED_PATH_TO_REPORTS_FOLDER: reports/
+      HARD_CODED_PATH_TO_DATA_FOLDER: ../Data
 
       # file paths we "create"  inside the tasks using the above top level folders  and which will be used in other tasks
       ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE: products/{{MY_FOLDER}}/sharedVariables/ABSOLUTE_PATH_TO_ATHLETES_CSV_FILE.pkl
